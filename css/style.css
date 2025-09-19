@@ -1,0 +1,123 @@
+/************* general styles *************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1194px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/************* header *************/
+.header {
+    margin: 34px 0 15px 0;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo h1 {
+    margin: 0;
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.header-logo p {
+    margin: 0;
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.header-controls a {
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.header-controls a:hover {
+    color: rgba(255, 73, 73, 1);
+}
+
+.header-controls--mobile {
+    display: none;
+    align-self: flex-start;
+}
+
+/************* main *************/
+
+/************* search *************/
+.search-box {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    gap: 3px;
+    border-radius: 5px;
+    background: rgba(255, 73, 73, 1);
+}
+
+.search-box input {
+    height: 100%;
+    min-width: 0;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 1);
+    padding: 0 30px;
+}
+
+.search-box button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 73, 73, 1);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+
+
+/************* content *************/
+
+
+/************* media requests *************/
+@media (max-width: 768px) {
+    .header-controls {
+        display: none;
+    }
+
+    .header-controls--mobile {
+        display: block;
+    }
+
+    .search-box input {
+        padding: 0 15px;
+    }
+}
