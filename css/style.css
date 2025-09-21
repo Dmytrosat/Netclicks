@@ -330,6 +330,10 @@ body {
     margin: 0;
 }
 
+.content-film__info--title h1:hover {
+    color: rgba(255, 73, 73, 1);
+}
+
 .content-film__info--title p {
     font-weight: 400;
     margin: 0;
